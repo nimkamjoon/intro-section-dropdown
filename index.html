@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -15,25 +16,42 @@
   </style>
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
+  <header>
+    <nav class="headNav">
+      <img src="images\logo.svg" alt="Snap logo" class="navLogo">
+      <div class="permalinks">
+        <a href="">Features</a>
+        <a href="">Company</a>
+        <a href="">Careers</a>
+        <a href="">About</a>    
+      </div>
+      <div class="accountButtons">
+        <a href="">Login</a>
+        <a href="" class="register">Register</a>  
+      </div>
+    </nav>
+  </header>
+  <section class="content">
+    <div class="block">
+      <h1 class="title">Make remote work</h1>
+      <p class="description">
+        Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+      </p>
+      <a href="" class="learnButton">Learn more</a>
+      <div class="clients">
+        <img src="images\client-databiz.svg" alt="" class="clientLogo">
+        <img src="images\client-audiophile.svg" alt="" class="clientLogo">
+        <img src="images\client-meet.svg" alt="" class="clientLogo">
+        <img src="images\client-maker.svg" alt="" class="clientLogo">
+      </div>
+    </div>
+    <div class="block">
+      <img src="images\image-hero-desktop.png" alt="Illustration">
+    </div>
+  </section> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jota Ernst</a>.
   </div>
 </body>
 </html>
