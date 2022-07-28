@@ -9,31 +9,39 @@
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
     <nav class="headNav">
-      <img src="images\logo.svg" alt="Snap logo" class="navLogo">
-      <div class="permalinks">
-        <a href="">Features</a>
-        <a href="">Company</a>
-        <a href="">Careers</a>
-        <a href="">About</a>    
+      <div class="headBlock">
+        <img src="images\logo.svg" alt="Snap logo" class="navLogo">
+        <div class="permalinks">
+          <a href="">Features <img src="images\icon-arrow-down.svg" alt="" class="permaArrow"></a>
+          <a href="">Company <img src="images\icon-arrow-down.svg" alt="" class="permaArrow"></a>
+          <a href="">Careers</a>
+          <a href="">About</a>    
+        </div>
       </div>
       <div class="accountButtons">
         <a href="">Login</a>
         <a href="" class="register">Register</a>  
       </div>
     </nav>
+    <div class="dropdown dropFeatures">
+      <a href="" class="dropLink"><img src="images\icon-todo.svg" alt="" class="linkIcon">Todo List</a>
+      <a href="" class="dropLink"><img src="images\icon-calendar.svg" alt="" class="linkIcon">Calendar</a>
+      <a href="" class="dropLink"><img src="images\icon-reminders.svg" alt="" class="linkIcon">Reminders</a>
+      <a href="" class="dropLink"><img src="images\icon-planning.svg" alt="" class="linkIcon">Planning</a>
+    </div>
+    <div class="dropdown dropCompany">
+      <a href="" class="droplink">History</a>
+      <a href="" class="droplink">Our Team</a>
+      <a href="" class="droplink">Blog</a>
+    </div>
   </header>
-  <section class="content">
+  <div class="content">
     <div class="block">
-      <h1 class="title">Make remote work</h1>
+      <h1 class="title">Make <br> remote work</h1>
       <p class="description">
         Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
       </p>
@@ -48,10 +56,10 @@
     <div class="block">
       <img src="images\image-hero-desktop.png" alt="Illustration">
     </div>
-  </section> 
+  </div> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Jota Ernst</a>.
+    Coded by <a href="#">J. Ernst</a>.
   </div>
 </body>
 </html>
